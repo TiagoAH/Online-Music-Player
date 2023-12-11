@@ -25,7 +25,7 @@ app.get('/search', async (req, res) => {
   const query = req.query.query;
   const maxResults = req.query.maxResults || 5;
 
-  const apiKey = 'AIzaSyAPhDqEUPVEy9iBEbi_ycUTXEfFxgU3Dak'; // Replace with your actual API key
+  const apiKey = '1234567890'; // Replace with your actual API key
   const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${maxResults}&q=${encodeURIComponent(query)}&key=${apiKey}`;
 
   try {
